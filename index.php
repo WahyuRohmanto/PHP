@@ -40,7 +40,7 @@
 
 
     <h2 class="text-center mt-4">DAFTAR NILAI</h2>
-    
+
     <div class="container text-center mt-4">
         <table class="table table-responsive">
             <thead class="table-dark">
@@ -97,7 +97,7 @@
             }
                ?>
 
-               <?php 
+                <?php 
                
                if ($no % 2 == 1) {
                 $warna = "#ffffff";
@@ -105,7 +105,7 @@
                else $warna = "#cfcfcf";
                ?>
 
-             <?php 
+                <?php 
              $warna_p = ($keterangan == "tidak lulus") ? "red" : "" ;
              ?>
                 <tr style="background-color: <?=$warna ?>;">
@@ -115,7 +115,9 @@
                     <td><?=$mhs["nim"]  ?></td>
                     <td><?=$mhs["nama"]  ?></td>
                     <td><?=$mhs["nilai"]  ?></td>
-                    <td><font color = "<?=$warna_p?>"><?=$keterangan  ?></font></td>
+                    <td>
+                        <font color="<?=$warna_p?>"><?=$keterangan  ?></font>
+                    </td>
                     <td><?=$grade  ?></td>
                     <td><?=$predikat?></td>
                 </tr>
