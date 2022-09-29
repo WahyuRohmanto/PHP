@@ -65,7 +65,7 @@
                 $grade = "B";
               }
               else if ($mhs["nilai"] < 80 && $mhs["nilai"] >=70){
-                $grade = "B";
+                $grade = "C";
               }
               else if ($mhs["nilai"] < 70 && $mhs["nilai"] >= 60){
                 $grade = "D";
