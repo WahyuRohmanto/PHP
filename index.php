@@ -54,16 +54,20 @@
             </thead>
             <tbody>
                 <?php 
-            $no = 1;
+            $no = "";
             foreach ($mahasiswa as $mhs) {
+              $no++;
               $keterangan = ($mhs["nilai"] >= 60) ? "lulus" : "tidak lulus"; 
-              if ($mhs["nilai"] >= 85) {
+              if ($mhs["nilai"] >= 90) {
              $grade = "A";
               }
-              else if ($mhs["nilai"] < 80 && $mhs["nilai"] >= 70){
+              else if ($mhs["nilai"] < 90 && $mhs["nilai"] >=80){
                 $grade = "B";
               }
-              else if ($mhs["nilai"] < 60 && $mhs["nilai"] >= 50){
+              else if ($mhs["nilai"] < 80 && $mhs["nilai"] >=70){
+                $grade = "B";
+              }
+              else if ($mhs["nilai"] < 70 && $mhs["nilai"] >= 60){
                 $grade = "D";
               }
               else $grade = "E";
@@ -110,7 +114,7 @@
                     <td><?=$grade  ?></td>
                     <td><?=$predikat ?></td>
                 </tr>
-                <?php $no++; } ?>
+                <?php  }  ?>
             </tbody>
             <tfoot>
                 <tr>
