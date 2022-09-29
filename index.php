@@ -63,10 +63,10 @@
               else if ($mhs["nilai"] < 80 && $mhs["nilai"] >= 70){
                 $grade = "B";
               }
-              else if ($mhs["nilai"] < 70 && $mhs["nilai"] >= 60){
-                $grade = "C";
+              else if ($mhs["nilai"] < 60 && $mhs["nilai"] >= 50){
+                $grade = "D";
               }
-              else $grade = "D";
+              else $grade = "E";
 
             switch ($grade) {
                 case 'A':
