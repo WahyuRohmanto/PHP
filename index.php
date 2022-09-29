@@ -40,7 +40,7 @@
 
     <h2 class="text-center mt-4">DAFTAR NILAI</h2>
     <div class="container text-center mt-4">
-        <table class="table table-bordered table-responsive">
+        <table class="table table-responsive">
             <thead class="table-dark">
                 <tr>
                     <th scope="col">No</th>
@@ -91,7 +91,15 @@
             }
                ?>
 
-                <tr>
+               <?php 
+               
+               if ($no % 2 == 1) {
+                $warna = "#ffffff";
+               }
+               else $warna = "#cfcfcf";
+               ?>
+
+                <tr style="background-color: <?=$warna ?>;">
                     <td>
                         <?=$no ?>
                     </td>
