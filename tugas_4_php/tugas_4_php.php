@@ -1,10 +1,13 @@
 <?php 
 
+// Class Pegawai
 class Pegawai {
 public $nip,$nama,$jabatan,$agama,$status;
 static $nomor = 0 ;
 
+// Membuat construction untuk dipanggil diparameter
 public function __construct($nip,$nama,$jabatan,$agama,$status){
+    // Mendifiniskan variable class dengan parameter function
     $this->nip = $nip;
     $this->nama = $nama;
     $this->jabatan = $jabatan;
@@ -12,7 +15,9 @@ public function __construct($nip,$nama,$jabatan,$agama,$status){
     $this->status = $status;
 }
 
+// Function untuk mencetak
 public function Cetak () {
+// Gaji Pokok Untuk Setiap Jabatan
 switch ($this->jabatan) {
     case 'manager':
         $gapok = 15000000;
@@ -30,12 +35,17 @@ switch ($this->jabatan) {
     default : $gapok = 0;  
 }
 
+// Tunjangan Jabatan
 $tunjab = 0.2 * $gapok;
+// Tunjangan Keluarga
 $tunkel = ($this->status == "sudah menikah") ? 0.2 * $gapok  : 0;
+// Uang Zakat Jika Beragama Islam dan Bergaji 6jt Keatas
 $zakatProfesi = ($this->agama == "islam" && $gapok >= 6000000) ? 0.025 * $gapok : 0;
+// Gaji Bersih
 $THP = ($gapok + $tunjab + $tunkel) - $zakatProfesi;
 ?>
 
+<!-- Pemanggilan Variable Untuk Dimasukan Ke Table -->
 <td><?=$this->nip?></td>
 <td><?=$this->nama;?></td>
 <td><?= $this->jabatan?></td>
@@ -50,11 +60,13 @@ $THP = ($gapok + $tunjab + $tunkel) - $zakatProfesi;
     }
 }
 
+// Membuat Beberapa Object
 $wahyu = new Pegawai(198503302003121001,"Wahyu Rohmanto","manager","islam","sudah menikah") ;
 $kayla = new Pegawai(198503302003121002,"Kayla Maharani","asment","kristen","belum menikah") ;
 $arip = new Pegawai(198503302003121003,"Arif Fathurahman","kabag","islam","sudah menikah") ;
 $adit = new Pegawai(198503302003121004,"Adit Prayoga","staff","budha","belum menikah") ;
 $burhan = new Pegawai(198503301233121001,"Burhan Abdullah","staff","islam","sudah menikah") ;
 
+// Array Variable Object Untuk Dilooping
 $nama_var = [$wahyu,$kayla,$arip,$adit,$burhan];
 ?>
