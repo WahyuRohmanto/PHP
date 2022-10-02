@@ -3,7 +3,6 @@
 // Class Pegawai
 class Pegawai {
 public $nip,$nama,$jabatan,$agama,$status;
-static $nomor = 0 ;
 
 // Membuat construction untuk dipanggil diparameter
 public function __construct($nip,$nama,$jabatan,$agama,$status){
