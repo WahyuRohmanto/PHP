@@ -62,8 +62,10 @@ $wahyu = new Pegawai(198503302003121001,"Wahyu Rohmanto","manager","islam","suda
 $kayla = new Pegawai(198503302003121002,"Kayla Maharani","asment","kristen","belum menikah") ;
 $arip = new Pegawai(198503302003121003,"Arif Fathurahman","kabag","islam","sudah menikah") ;
 $adit = new Pegawai(198503302003121004,"Adit Prayoga","staff","budha","belum menikah") ;
+$burhan = new Pegawai(198503301233121001,"Burhan Abdullah","staff","islam","sudah menikah") ;
 
-$nama_var = [$wahyu,$kayla,$arip,$adit,];
+
+$nama_var = [$wahyu,$kayla,$arip,$adit,$burhan];
 ?>
 
 
