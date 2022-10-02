@@ -9,8 +9,8 @@
   </head>
   <body>
     <h1 class = "text-center" style="color: #D61C4E" > DAFTAR PEGAWAI</h1>
-    <div class="container text-center mt-4 ">
-    <table class="table table-bordered">
+    <div class="container-fluid text-center mt-4  ">
+    <table class="table table-bordered table-responsive">
   <thead>
     <tr style = "color : white; background-color : #293462;">
       <th scope="col">No</th>
@@ -19,10 +19,12 @@
       <th scope="col">JABATAN</th>
       <th scope="col">AGAMA</th>
       <th scope="col">STATUS</th>
-      <th scope="col">GAPOK</th>
+      <th scope="col">GAJI POKOK</th>
       <th scope="col">TUNJANGAN JABATAN</th>
       <th scope="col">TUNJANGAN KELUARGA</th>
-      <th scope="col">ZAKAT PROFESI</th>
+      <th scope="col">ZAKAT</th>
+      <th scope="col">GAJI BERSIH</th>
+      
     </tr>
   </thead>
   <tbody>

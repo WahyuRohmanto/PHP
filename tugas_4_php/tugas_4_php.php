@@ -36,6 +36,7 @@ switch ($this->jabatan) {
 $tunjab = 0.2 * $gapok;
 $tunkel = ($this->status == "sudah menikah") ? 0.2 * $gapok  : 0;
 $zakatProfesi = ($this->agama == "islam" && $gapok >= 6000000) ? 0.025 * $gapok : 0;
+$THP = ($gapok + $tunjab + $tunkel) - $zakatProfesi;
 ?>
 
 
@@ -49,6 +50,7 @@ $zakatProfesi = ($this->agama == "islam" && $gapok >= 6000000) ? 0.025 * $gapok 
       <td><?="Rp"." ".number_format($tunjab)?></td>
       <td><?="Rp"." ".number_format($tunkel)?></td>
       <td><?="Rp"." ".number_format($zakatProfesi)?></td>
+      <td><?="Rp"." ".number_format($THP)?></td>
     
     <?php 
     }
@@ -62,8 +64,6 @@ $arip = new Pegawai(198503302003121003,"Arif Fathurahman","kabag","islam","sudah
 $adit = new Pegawai(198503302003121004,"Adit Prayoga","staff","budha","belum menikah") ;
 
 $nama_var = [$wahyu,$kayla,$arip,$adit,];
-
-
 ?>
 
 
