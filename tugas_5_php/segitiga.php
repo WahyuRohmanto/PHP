@@ -25,7 +25,7 @@ class Segitiga extends Bentuk2D{
     {
         $alas2 = pow($this->alas,2);
         $tinggi2 = pow($this->tinggi,2);
-        $sisiMiring = sqrt($alas2 * $tinggi2);
+        $sisiMiring = sqrt($alas2 + $tinggi2);
         $keliling = $this->alas + $this->tinggi + $sisiMiring;
         return $keliling;
     }

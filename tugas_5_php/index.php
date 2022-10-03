@@ -35,7 +35,7 @@
       <td><?= $triangle -> namaBidang()?></td>
       <td>Memiliki alas 15cm dan tinggi 16cm</td>
       <td><?= $triangle -> luasBidang()?> cm</td>
-      <td><?= $triangle -> kelilingBidang()?>cm</td>
+      <td><?= $triangle -> kelilingBidang()?> cm</td>
  
     </tr>
     <tr>
