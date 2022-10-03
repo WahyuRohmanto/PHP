@@ -27,23 +27,23 @@
       <td><?= $nomor++ ?></td>
       <td><?= $circle -> namaBidang()?></td>
       <td>Memiliki jari jari 18cm</td>
-      <td><?= $circle -> luasBidang()?></td>
-      <td><?= $circle -> kelilingBidang()?></td>
+      <td><?= $circle -> luasBidang()?> cm</td>
+      <td><?= $circle -> kelilingBidang()?> cm</td>
     </tr>
     <tr>
       <td ><?= $nomor++ ?></td>
       <td><?= $triangle -> namaBidang()?></td>
       <td>Memiliki alas 15cm dan tinggi 16cm</td>
-      <td><?= $triangle -> luasBidang()?></td>
-      <td><?= $triangle -> kelilingBidang()?></td>
+      <td><?= $triangle -> luasBidang()?> cm</td>
+      <td><?= $triangle -> kelilingBidang()?>cm</td>
  
     </tr>
     <tr>
        <td><?= $nomor++ ?></td>
       <td><?= $cube -> namaBidang()?></td>
       <td>memiliki panjanng 15cm dan lebar 16cm</td>
-      <td><?= $cube -> luasBidang()?></td>
-      <td><?= $cube -> kelilingBidang()?></td>
+      <td><?= $cube -> luasBidang()?> cm</td>
+      <td><?= $cube -> kelilingBidang()?> cm</td>
       
 
     </tr>
