@@ -11571,7 +11571,34 @@ footer.footer .social-link:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
+/* css ku */
+
 .colorp{
   color: #f7c31b ;
 }
+
+.find:hover {
+  color: black;
+  background-color: white;
+  border-style: solid;
+  border-color: #1d809f;
+}
+
+.about:hover {
+  color: black;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+}
+
+.none {
+  text-decoration: none;
+}
+
+.none:hover{
+  color: black;
+}
+
+
+
 
