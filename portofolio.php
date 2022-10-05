@@ -8,7 +8,7 @@
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="html.html">
+                        <a class="portfolio-item" href="html.php">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">HTML</div>
@@ -19,7 +19,7 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="javascript.html">
+                        <a class="portfolio-item" href="javascript.php">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">JAVASCRIPT</div>
@@ -30,7 +30,7 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="portfolio-item" href="php.php">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">PHP</div>
@@ -44,11 +44,11 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div  class="h1">WHAT NEXT?</div>
-                                   
+                                    <div  class="h2">CSS</div>
+                                    <p>CSS adalah bahasa Cascading Style Sheet dan biasanya digunakan untuk mengatur tampilan elemen yang tertulis dalam bahasa markup, seperti HTML. CSS berfungsi untuk memisahkan konten dari tampilan visualnya di situs.</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" width="450" src="assets/img/next.jpg" alt="..." />
+                            <img class="img-fluid" width="306" src="assets/img/CSS.png" alt="..." />
                         </a>
                     </div>
                 </div>

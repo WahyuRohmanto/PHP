@@ -21,7 +21,11 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
-  <body>
+  <body> 
+    <?php 
+    include_once 'navporto.php';
+    ?>
+    <!-- PORTOFOLIO -->
     <section class="content-section" id="portfolio">
       <div class="container px-4 px-lg-5">
         <div class="content-section-heading text-center">
@@ -30,7 +34,7 @@
         </div>
         <div class="row gx-0">
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="html.php">
               <div class="caption">
                 <div class="caption-content">
                   <div class="h2">HTML</div>
@@ -45,7 +49,7 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#!">
+            <a class="portfolio-item" href="javascript.php">
               <div class="caption">
                 <div class="caption-content">
                   <div class="h2">JAVASCRIPT</div>
@@ -64,7 +68,7 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#!">
+            <a class="portfolio-item" href="php.php">
               <div class="caption">
                 <div class="caption-content">
                   <div class="h2">PHP</div>
